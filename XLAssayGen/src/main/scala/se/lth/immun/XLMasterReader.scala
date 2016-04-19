@@ -4,7 +4,7 @@ import java.io.File
 import scala.io.Source
 import scala.collection.mutable.ArrayBuffer
 
-object XLMasterReader {
+object XLMasterFormat {
 
 	
 	val COMMON_HEADER = Array(
