@@ -73,6 +73,8 @@ object KojakOutput {
 					iSPEC_ID = cols.indexOf("SpecId")
 					iLABEL = cols.indexOf("Label")
 					iSCAN_NUM = cols.indexOf("ScanNum")
+					if (iSCAN_NUM == -1)
+						iSCAN_NUM = cols.indexOf("scannr")
 					iSCORE = cols.indexOf("Score")
 					iD_SCORE = cols.indexOf("dScore")
 					iNORM_RANK = cols.indexOf("NormRank")
