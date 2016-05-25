@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>se.lth.immun</groupId>
   <artifactId>Taxlink</artifactId>
-  <version>0.8.0</version>
+  <version>0.8.1</version>
   <inceptionYear>2014</inceptionYear>
   <properties>
     <scala.version>2.10.3</scala.version>
@@ -40,24 +40,19 @@
   		<version>1.1.0</version>
   	</dependency>
   	<dependency>
-  		<groupId>se.lth.immun</groupId>
-  		<artifactId>Proteins</artifactId>
-  		<version>1.1.4</version>
+  		<groupId>se.johanteleman</groupId>
+  		<artifactId>CLIApp</artifactId>
+  		<version>1.1.0</version>
   	</dependency>
   	<dependency>
   		<groupId>se.lth.immun</groupId>
   		<artifactId>XLink</artifactId>
-  		<version>0.3.0</version>
+  		<version>0.3.4</version>
   	</dependency>
   	<dependency>
   		<groupId>se.lth.immun</groupId>
   		<artifactId>UniMod</artifactId>
-  		<version>1.2.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>se.johanteleman</groupId>
-  		<artifactId>CLIApp</artifactId>
-  		<version>1.1.0</version>
+  		<version>1.3.3</version>
   	</dependency>
   </dependencies>
   
