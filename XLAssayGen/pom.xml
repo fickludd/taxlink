@@ -41,13 +41,18 @@
   	</dependency>
   	<dependency>
   		<groupId>se.lth.immun</groupId>
+  		<artifactId>XLMasterFormat</artifactId>
+  		<version>0.1.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>se.lth.immun</groupId>
   		<artifactId>UniMod</artifactId>
   		<version>1.2.1</version>
   	</dependency>
   	<dependency>
   		<groupId>se.johanteleman</groupId>
   		<artifactId>CLIApp</artifactId>
-  		<version>1.0.1</version>
+  		<version>1.1.0</version>
   	</dependency>
   	<dependency>
   		<groupId>se.lth.immun</groupId>

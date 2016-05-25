@@ -58,7 +58,7 @@ object XLAssayGen extends CLIApp {
 		println("   xl master file: " + params.xlMaster.value)
 		println("   fragment types: " + params.FRAG_TYPES.mkString(","))
 		
-		val masterRecords = XLMasterReader.read(params.xlMaster)
+		val masterRecords = XLMasterFormat.read(params.xlMaster)
 		
 		val filteredRecords = masterRecords.filter(r => 
 			r.kojak.qValue < params.qValue && (r.isComplete || params.useIncompleteRows))
@@ -78,7 +78,7 @@ object XLAssayGen extends CLIApp {
 	
 	
 	
-	def genAssays(params:XLAssayGenParams)(r:XLMasterReader.Row):Either[XLAssay, String] = {
+	def genAssays(params:XLAssayGenParams)(r:XLMasterFormat.Row):Either[XLAssay, String] = {
 		XLink.fromString(r.common.xlink, UniMod.parseUniModSequence, params.kojakConf) match {
 			case Left(xlink) =>
 				val targets = genTargets(xlink, r.common.z, params)
